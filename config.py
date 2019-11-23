@@ -1,0 +1,2 @@
+WiFiSSID = "<yourSSIDhere>"
+WiFiKey  = "<yourKEYhere>"
