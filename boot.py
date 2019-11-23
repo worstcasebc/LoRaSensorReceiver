@@ -1,15 +1,13 @@
 import machine
 import time
 from network import WLAN
-
-ssid = "yourSSIDhere"
-key  = "yourKEYhere"
+import config
 
 wlan = WLAN(mode=WLAN.STA) # get current object, without changing the mode
 
 if not wlan.isconnected():
     # change the line below to match your network ssid, security and password
-    wlan.connect(ssid, auth=(WLAN.WPA2, key))
+    wlan.connect(config.WiFiSSID, auth=(WLAN.WPA2, config.WiFiKey))
     while not wlan.isconnected():
         machine.idle() # save power while waiting
     print("WiFi connected ...")
