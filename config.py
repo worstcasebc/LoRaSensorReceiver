@@ -1,2 +1,0 @@
-WiFiSSID = "test"
-WiFiKey  = "test"
