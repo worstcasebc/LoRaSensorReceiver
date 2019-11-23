@@ -6,6 +6,7 @@ That project consists of two components, the [sender](https://github.com/worstca
 
 ## Receiver
 That component receives the sent temperature and humidity data via Raw-LoRa and displays the data together with the timestamp on a display.
+
 <img src="https://user-images.githubusercontent.com/58089458/69477128-b2196480-0de2-11ea-8f79-3ef3ab7dd83d.jpg" width="600" height="400" />
 
 ### Hardware used
