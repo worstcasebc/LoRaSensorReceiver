@@ -29,7 +29,7 @@ That component receives the sent temperature and humidity data via Raw-LoRa and 
 There is a very good [library from Adafruit](https://github.com/adafruit/Adafruit_CircuitPython_SharpMemoryDisplay) for the usage of Sharp memory displays with their CircuitPlayground-devices. I only made minor changes to adapt it to the specifics of Pycoms Micropython.
 
 ### Code
-The Lopy4 board connects to a WiFi first. This happens in the boot.py, that is called first after a start/reboot. You need to provide a SSID and the key for that WiFi within boot.py in line 5 and 6. After WiFi is connected, the actual time is requested and stored to the RTC of the board.
+The Lopy4 board connects to a WiFi first. This happens in the boot.py, that is called first after a start/reboot. You need to provide a SSID and the key for that WiFi within config.py. After WiFi is connected, the actual time is requested and stored to the RTC of the board.
 Within the main.py the lora-connection is prepared, the display initiated and some other initialization stuff done. The function recLoRa() listen to the LoRa-socket until a data-packet is received, which is larger than 8 bytes. Then the received data are unpacked with
 ```python
 dataArray[0], datatemp, datahum = struct.unpack('<4shh', data) 
