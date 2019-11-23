@@ -1,2 +1,2 @@
-WiFiSSID = "<yourSSIDhere>"
-WiFiKey  = "<yourKEYhere>"
+WiFiSSID = "test"
+WiFiKey  = "test"
